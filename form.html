@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/newgrid.css">
+    <!--CSS link-->
+<title>Peter's Computer Sales Survey</title>
+</head>
+<body>
+    <colour class=""
+    <header class="header">
+        <h1>Peter's Computer Sales Survey</h1>
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="computersales.html">Back to Sales</a>
+    </nav>
+    <br><br><br>
+    <!--Nav bar-->
+    </header>
+    <aside class="menu">
+        <ul>
+    <li>Please take some time so complete this short survey. Or don't, I can't tell you what to do.</li>
+    
+    </ul>
+</aside>
+    <article class="main">
+        <form action="mailto:w0468724@nscc.ca?subject=From%20our%20Website" method="post" enctype="text/plain">
+    <!--Tell the browser to start an e-mail with the contents of the form-->
+       <label for="dov">Date of visit:</label><br>
+       <input type="date" id="dov" name="dov" required="required"><br><br>
+       <!--date section, I have date set to required-->
+       <lable for="lname">First Name:</lable><br>
+       <input type="text" id="fname" name="fname" required="required" minlength="2"> <br><br>
+       <lable for ="email">E-mail Address:</lable><br>
+       <input type="email" id="email" name="email" required="required" pattern=".+@.+..+"><br><br>
+        <lable for ="hdyfo">How did you find out about us?</lable><br>
+        <input type="text" id="hdyfo" name="hdyfo" size="50" required="required"><br><br>
+        <lable for="stars">Give us a star rating:</lable> <br>
+            <!--text imputs-->
+        <select name="stars" id="stars"><br>
+            <option value="1">*</option>
+            <option value="2">**</option>
+            <option value="3">***</option>
+            <option value="4">****</option>
+            <option value="5">*****</option>
+            </select>
+            <!--drop down menu-->
+            <br>
+            <br>
+       <lable for ="prov">Province/State:</lable><br>
+       <input type="text" id="prov" name="prov"><br><br>
+       <lable for ="postcd">Postal/Zip Code:</lable><br>
+       <input type="text" id="postcd" name="postcd"size="10" minlength="4"><br><br>
+       <lable for ="country">Country:</lable><br>
+       <input type="text" id="country" name="country" required="required" minlength="2"><br><br>
+            <!--more text imputs-->
+      <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+            <!--buttons-->
+    </form>
+</article>
+</body>
+</html>
