@@ -35,7 +35,8 @@
         <label for="prov">Province:</label><br>
         <input type="text" id="prov" name="prov" required="required"><br><br>
         <label for="pcode">Postal Code:</label><br>
-        <input type="text" id="pcode" name="pcode" required="required" size="6"><br><br>
+        <input type="text" id="pcode" name="pcode" required="required" size="6" 
+        pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"><br><br>
        <!--Customer information-->
        <lable for="product">Product:</lable> <br>
            <select name="product" id="product"><br>
@@ -92,6 +93,5 @@
         <input type="reset" value="Reset">
         <!--buttons-->
         </form>
-        </article>
-    
+        </article>   
 </html>
