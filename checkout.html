@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/newgrid.css">
+        <!--CSS link-->
+<title>Checkout</title>
+    </head>
+    <header class="header">
+        <h1>Check out</h1>  
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        </nav>
+        <br><br><br>
+        <!--nav bar--> 
+    </header>
+    <aside class="menu">
+        <ul>
+    <li>Select the product you want and add the required information</li>
+    </ul>
+    </aside>
+    <!--aside-->
+    <article class="main">
+        <form action="mailto:laura.franks@nscc.ca?subject=sale" method="post" enctype="text/plain">
+        <!--Tell the browser to start an e-mail with the contents of the form-->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required="required"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required="required"><br><br>
+        <lable for ="email">E-mail Address:</lable><br>
+       <input type="email" id="email" name="email" required="required" pattern=".+@.+..+"><br><br>
+        <label for="addr">Address:</label><br>
+        <input type="text" id="addr" name="addr" required="required" size="50"><br><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required="required"><br><br>
+        <label for="prov">Province:</label><br>
+        <input type="text" id="prov" name="prov" required="required"><br><br>
+        <label for="pcode">Postal Code:</label><br>
+        <input type="text" id="pcode" name="pcode" required="required" size="6"><br><br>
+       <!--Customer information-->
+       <lable for="product">Product:</lable> <br>
+           <select name="product" id="product"><br>
+            <option value="fell pironins">Fell PIRONINS - $649.99</option>
+            <option value="ph laptop">PH Laptop - $749.99</option>
+            <option value="pacer datorpre 51">Pacer Datorpre 51 - $1009.99</option>
+          </select>
+          <!--what computer they want-->
+        <br><br>
+        <label for="ccn">Credit Card Number:</label><br>
+        <input type="number" id="ccn" name="ccn" required="required"><br><br>
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" required="required" size="1"><br><br>
+        <!--information entered manually-->
+        <lable for="expmo">Expires:</lable> <br>
+        <select name="expmo:" id="expmo"><br>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <!--month drop down for exp-->
+          <select name="expyr:" id="expyr"><br>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+          </select>
+          <!--year drop down for exp-->
+          <br><br>
+        <label for="cname">Cardholder's Name:</label><br>
+        <input type="text" id="cname" name="cname" required="required" size="40"><br><br>
+       <!--name-->
+        <input type="checkbox" id="agree" name="agree" value="yes">
+        <label for="agree">I authorize Peter's computer sales to charge my credit card the amount above.</label><br><br>
+       <!--cardholder agreement-->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <!--buttons-->
+        </form>
+        </article>
+    
+</html>
