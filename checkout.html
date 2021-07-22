@@ -2,7 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/newgrid.css">
-        <!--CSS link-->
+        <!--css link-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--viewport-->
 <title>Checkout</title>
     </head>
     <body>
@@ -30,8 +32,10 @@
         <input type="text" id="lname" name="lname" required="required"><br><br>
         <lable for ="email">E-mail Address:</lable><br>
        <input type="email" id="email" name="email" required="required" pattern=".+@.+..+"><br><br>
-        <label for="addr">Address:</label><br>
-        <input type="text" id="addr" name="addr" required="required" size="50"><br><br>
+       <label for="phone">Phone Number (123-456-7890):</label><br>
+       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"><br><br>
+       <lable for ="addr">Address:</lable><br>
+          <input type="text" id="addr" name="addr" required="required" size="50"><br><br>
         <label for="city">City:</label><br>
         <input type="text" id="city" name="city" required="required"><br><br>
         <label for="prov">Province/State:</label><br>
