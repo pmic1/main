@@ -3,15 +3,16 @@
 <head>
     <link rel="stylesheet" href="css/newgrid.css">
     <!--CSS link-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport-->
 <title>Peter's Computer Sales Survey</title>
 </head>
 <body>
-    <colour class=""
+    <colour class="">
     <header class="header">
         <h1>Peter's Computer Sales Survey</h1>
     <nav class="topnav">
         <a href="index.html">Home</a>
-    
     </nav>
     <br><br><br>
     <!--Nav bar-->
@@ -34,6 +35,9 @@
        <input type="email" id="email" name="email" required="required" pattern=".+@.+..+"><br><br>
         <lable for ="hdyfo">How did you find out about us?</lable><br>
         <input type="text" id="hdyfo" name="hdyfo" size="50" required="required"><br><br>
+        <label for="phone">Phone Number (123-456-7890):</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"><br><br>
+        
         <lable for="stars">Give us a star rating:</lable> <br>
             <!--text imputs-->
         <select name="stars" id="stars"><br>
@@ -48,12 +52,15 @@
             <br>
        <lable for ="prov">Province/State:</lable><br>
        <input type="text" id="prov" name="prov"><br><br>
-       <lable for ="postcd">Postal/Zip Code:</lable><br>
-       <input type="text" id="postcd" name="postcd"size="10" minlength="4"><br><br>
+       <label for="pcode">Postal/ZIP Code:</label><br>
+        <input type="text" id="pcode" name="pcode" required="required" size="6" 
+        pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"><br><br>
        <lable for ="country">Country:</lable><br>
        <input type="text" id="country" name="country" required="required" minlength="2"><br><br>
             <!--more text imputs-->
-      <input type="submit" value="Submit">
+            <input type="checkbox" id="emailyn" name="emailyn" value="y">
+            <label for="emailyn">Click here to receive promotional e-mails</label><br><br>
+            <input type="submit" value="Submit">
         <input type="reset" value="Reset">
             <!--buttons-->
     </form>
